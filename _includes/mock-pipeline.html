@@ -1,0 +1,17 @@
+{% assign p = site.data.pipeline %}
+<div class="mock" data-pipeline>
+  <div class="mock__bar">
+    <span>{{ p.file }}</span>
+    <div class="toggle">
+      {% for t in p.targets %}
+      <button type="button" class="toggle__btn{% if forloop.first %} is-on{% endif %}" data-command="{{ t.command }}">{{ t.label }}</button>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="pipeline">
+    {% for s in p.steps %}
+    <span class="pipeline__node{% if s.highlight %} is-hl{% endif %}">{{ s.name }}</span>{% unless forloop.last %}<span>→</span>{% endunless %}
+    {% endfor %}
+  </div>
+  <div class="mock__term">$ <span data-command-out>{{ p.targets[0].command }}</span></div>
+</div>

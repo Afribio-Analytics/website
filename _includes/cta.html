@@ -1,0 +1,7 @@
+{% comment %} Usage: {% include cta.html title="..." button="..." %} {% endcomment %}
+<section class="cta">
+  <div class="wrap cta__in">
+    <h2 class="h2">{{ include.title }}</h2>
+    <a class="btn btn--on-acc" href="{{ '/contact/' | relative_url }}">{{ include.button | default: 'Talk to us' }} →</a>
+  </div>
+</section>

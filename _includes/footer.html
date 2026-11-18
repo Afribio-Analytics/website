@@ -1,0 +1,22 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__grid">
+      <div class="site-footer__col">
+        <span class="logo-tile">{% include logo.html %}</span>
+        <p>{{ site.title }}. {{ site.tagline }}</p>
+      </div>
+      <div class="site-footer__col site-footer__links">
+        {% for item in site.data.navigation %}
+        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {% endfor %}
+        <a href="{{ '/contact/' | relative_url }}">Contact</a>
+      </div>
+      <div class="site-footer__col site-footer__contact">
+        <span>{{ site.location }}</span>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <a href="tel:{{ site.phone }}">{{ site.phone_display }}</a>
+      </div>
+    </div>
+    <div class="site-footer__legal">© {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</div>
+  </div>
+</footer>

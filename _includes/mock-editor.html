@@ -1,0 +1,10 @@
+<div class="mock mock--editor">
+  <div class="editor__tabs"><span class="is-on">Snakefile</span><span>config.yaml</span></div>
+<pre class="editor__code"><b>rule</b> align:
+    <b>input</b>:  "reads/{sample}.fastq.gz"
+    <b>output</b>: "aligned/{sample}.bam"
+    <b>threads</b>: 8
+    <b>shell</b>: <u>"bwa mem -t {threads} ref.fa {input}"</u></pre>
+  <div class="editor__lint">⚠ line 5: {output} is declared but not used in shell</div>
+  <div class="editor__actions"><span class="is-on">▶ Run rule</span><span>Dry run</span></div>
+</div>

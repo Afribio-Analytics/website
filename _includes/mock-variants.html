@@ -1,0 +1,14 @@
+{% assign v = site.data.variants %}
+{% assign bases = v.track | split: ' ' %}
+<div class="mock mock--flat">
+  <div class="mock__bar"><span>Variant Explorer</span><span>{{ v.caption }}</span></div>
+  <div class="track">
+    {% for b in bases %}{% if b contains '[' %}<span class="is-hl">{{ b | remove: '[' | remove: ']' }}</span>{% else %}<span>{{ b }}</span>{% endif %}{% endfor %}
+  </div>
+  <div class="vtable">
+    <div class="vtable__row vtable__row--head"><span>Gene</span><span>Variant</span><span>Change</span><span>Consequence</span></div>
+    {% for r in v.rows %}
+    <div class="vtable__row{% if r.selected %} is-selected{% endif %}"><span>{{ r.gene }}</span><span>{{ r.id }}</span><span>{{ r.change | escape }}</span><span>{{ r.consequence }}</span></div>
+    {% endfor %}
+  </div>
+</div>

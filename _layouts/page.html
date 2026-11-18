@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<section class="wrap page-hero">
+  {% if page.eyebrow %}<div class="eyebrow">{{ page.eyebrow }}</div>{% endif %}
+  <h1 class="h1">{{ page.headline | default: page.title }}</h1>
+  {% if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
+</section>
+{{ content }}
