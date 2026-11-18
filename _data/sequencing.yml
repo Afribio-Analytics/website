@@ -1,0 +1,18 @@
+platforms:
+  - name: Illumina
+    text: Short-read sequencing.
+  - name: Oxford Nanopore
+    text: Long-read sequencing.
+  - name: PacBio
+    text: Long-read sequencing.
+steps:
+  - title: Sample prep
+    text: Extraction and library preparation.
+  - title: Sequencing
+    text: On the platform that fits the question.
+  - title: Quality control
+    text: Read and run QC before analysis starts.
+  - title: Analysis
+    text: Reproducible pipelines, documented.
+  - title: Figures
+    text: Publication-ready figures and a report.

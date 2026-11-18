@@ -1,0 +1,22 @@
+cards:
+  - title: Workshops
+    text: Comprehensive workshops that fast-track learners into practical bioinformatics.
+  - title: Curriculum Kits
+    text: Ready-to-teach modules for your own classroom.
+    tags: [Datasets, Slides, Assessments]
+  - title: Community
+    text: A network of African bioinformaticians supporting each other.
+    dark: true
+kit:
+  title: Example module
+  topic: Variant calling
+  files:
+    - path: data/reads_subset.fastq.gz
+      kind: Dataset
+    - path: slides/01_alignment.pdf
+      kind: Slides
+    - path: slides/02_calling.pdf
+      kind: Slides
+    - path: assessment/quiz.md
+      kind: Assessment
+      highlight: true

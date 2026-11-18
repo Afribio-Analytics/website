@@ -1,0 +1,17 @@
+caption: Example view / GRCh38
+# Bases shown in the track. Wrap a base in [] to highlight it, e.g. [T]
+track: "A C T C C T G [T] G G A G A A G T C T [G] C C G T T"
+rows:
+  - gene: HBB
+    id: rs334
+    change: "T>A"
+    consequence: missense
+    selected: true
+  - gene: G6PD
+    id: rs1050828
+    change: "C>T"
+    consequence: missense
+  - gene: APOL1
+    id: rs73885319
+    change: "A>G"
+    consequence: missense

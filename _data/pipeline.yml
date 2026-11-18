@@ -1,0 +1,15 @@
+file: wgs-germline.pipeline
+steps:
+  - name: FASTQ
+  - name: fastp
+  - name: bwa-mem2
+  - name: GATK
+    highlight: true
+  - name: VCF
+targets:
+  - id: cloud
+    label: Cloud
+    command: afribio deploy wgs-germline --target cloud
+  - id: hpc
+    label: HPC
+    command: afribio deploy wgs-germline --target hpc --scheduler slurm

@@ -1,0 +1,14 @@
+# mock: file in _includes/ shown next to the text. dark: true gives the band a dark background.
+- name: Pipeline Builder
+  label: Product A
+  text: A drag-and-drop workflow designer. Assemble tools on a canvas and deploy the result to cloud or HPC.
+  mock: mock-pipeline.html
+- name: Variant Explorer
+  label: Product B
+  text: Interactive visualisation and annotation of genomic variants. Move from a called variant to its gene and consequence in one view.
+  mock: mock-variants.html
+  dark: true
+- name: VSCode Extension
+  label: Product C
+  text: Instant boilerplates, Snakemake and YAML linting, and workflow execution without leaving the editor.
+  mock: mock-editor.html

@@ -1,0 +1,9 @@
+- title: Software
+  url: /software/
+  text: Pipeline Builder, Variant Explorer and a VSCode extension for Snakemake workflows.
+- title: Sequencing
+  url: /sequencing/
+  text: NGS on Illumina, Oxford Nanopore and PacBio, from sample prep to publication-ready figures.
+- title: Teaching
+  url: /teaching/
+  text: Workshops, ready-to-teach curriculum kits and a community of African bioinformaticians.
