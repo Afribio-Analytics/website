@@ -7,7 +7,7 @@ Jekyll site, built automatically by GitHub Pages from `main`.
     bundle install
     bundle exec jekyll serve
 
-Then open http://localhost:4000/website/
+Then open http://localhost:4000/
 
 ## Where to edit
 

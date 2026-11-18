@@ -1,8 +1,8 @@
 title: Afribio Analytics
 tagline: Empowering genomics across Africa.
 description: Bioinformatics software, NGS sequencing and analysis, and training for African genomics.
-url: https://afribio-analytics.github.io
-baseurl: /website
+url: https://afribioanalytics.org
+baseurl: ""
 
 # Theme
 accent: "#0f7a63"
