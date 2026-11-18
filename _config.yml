@@ -1,0 +1,19 @@
+title: Afribio Analytics
+tagline: Empowering genomics across Africa.
+description: Bioinformatics software, NGS sequencing and analysis, and training for African genomics.
+url: https://afribio-analytics.github.io
+baseurl: /website
+
+# Theme
+accent: "#0f7a63"
+grid_lines: true
+uppercase_headlines: false
+
+# Contact
+email: confilifebio@gmail.com
+phone: "+447466543401"
+phone_display: "+44 7466 543401"
+location: Cranfield, England
+
+permalink: pretty
+exclude: [README.md, Gemfile, Gemfile.lock, vendor]
