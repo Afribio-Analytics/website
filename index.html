@@ -1,0 +1,37 @@
+---
+layout: default
+headline: Genomics tools for African science
+lede: Afribio Analytics builds bioinformatics software, runs NGS sequencing and analysis, and trains the next cohort of African bioinformaticians.
+---
+<section class="wrap hero">
+  <div class="hero__tags"><span class="tag tag--acc">Bioinformatics</span><span class="tag">Software / Sequencing / Teaching</span></div>
+  <h1 class="h1 h1--xl">{{ page.headline }}<span class="cursor" aria-hidden="true"></span></h1>
+  <div class="hero__row">
+    <p class="lede">{{ page.lede }}</p>
+    <div class="btn-row">
+      <a class="btn" href="{{ '/contact/' | relative_url }}">Talk to us →</a>
+      <a class="btn btn--ghost" href="{{ '/software/' | relative_url }}">See the software</a>
+    </div>
+  </div>
+</section>
+
+<section class="pillars">
+  {% for p in site.data.pillars %}
+  <a class="pillar" href="{{ p.url | relative_url }}">
+    <div class="wrap pillar__in">
+      <div class="pillar__title"><span class="pillar__num">{{ forloop.index | prepend: '0' }}</span>{{ p.title }}</div>
+      <p>{{ p.text }} <span class="mono">→</span></p>
+    </div>
+  </a>
+  {% endfor %}
+</section>
+
+<section class="wrap band split">
+  <div>
+    <div class="eyebrow">Pipeline Builder</div>
+    <h2 class="h2">Draw the workflow. Run it on cloud or HPC.</h2>
+    <p class="body">Drag tools onto a canvas, connect them, and deploy the same pipeline to either target.</p>
+    <a class="text-link" href="{{ '/software/' | relative_url }}">All three products →</a>
+  </div>
+  {% include mock-pipeline.html %}
+</section>

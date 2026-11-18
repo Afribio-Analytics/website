@@ -1,0 +1,36 @@
+---
+layout: page
+title: Teaching
+permalink: /teaching/
+eyebrow: 03 / Teaching &amp; capacity building
+headline: Practical bioinformatics, taught hands-on.
+lede: For learners starting out, and for the institutions that teach them.
+---
+{% assign t = site.data.teaching %}
+<section class="rule-top">
+  <div class="wrap band band--sm cards">
+    {% for c in t.cards %}
+    <div class="card{% if c.dark %} card--dark{% endif %}">
+      <h2 class="h3">{{ c.title }}</h2>
+      <p>{{ c.text }}</p>
+      {% if c.tags %}<div class="tags">{% for tag in c.tags %}<span class="tag tag--box">{{ tag }}</span>{% endfor %}</div>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="rule-top">
+  <div class="wrap band split">
+    <div>
+      <h2 class="h2">What is in a kit</h2>
+      <p class="body">Each module ships with the dataset, the slides and the assessment, so an instructor can run it as is.</p>
+      <a class="text-link" href="{{ '/contact/' | relative_url }}">Ask about workshops and kits →</a>
+    </div>
+    <div class="mock">
+      <div class="mock__bar"><span>{{ t.kit.title }}</span><span>{{ t.kit.topic }}</span></div>
+      {% for f in t.kit.files %}
+      <div class="file{% if f.highlight %} is-hl{% endif %}"><span>{{ f.path }}</span><span class="file__kind">{{ f.kind }}</span></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

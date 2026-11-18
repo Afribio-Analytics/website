@@ -1,0 +1,21 @@
+---
+layout: page
+title: Software
+permalink: /software/
+eyebrow: 01 / Software suite
+headline: Three tools, one workflow.
+lede: Build a pipeline, write it in your editor, and explore the variants it calls.
+---
+{% for p in site.data.products %}
+{% assign odd = forloop.index | modulo: 2 %}
+<section class="rule-top{% if p.dark %} is-dark{% endif %}">
+  <div class="wrap band split{% if odd == 0 %} split--flip{% endif %}">
+    <div>
+      <div class="eyebrow">{{ p.label }}</div>
+      <h2 class="h2">{{ p.name }}</h2>
+      <p class="body">{{ p.text }}</p>
+    </div>
+    {% include {{ p.mock }} %}
+  </div>
+</section>
+{% endfor %}
